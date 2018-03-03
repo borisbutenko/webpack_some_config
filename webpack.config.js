@@ -17,7 +17,7 @@ const devFolder = path.resolve(__dirname, './src');
 const [ css, scss ] = [ 'css-loader?{discardComments:{removeAll:true}}', `sass-loader` ];
 
 // --- plugins
-const plugins = [
+let plugins = [
   new ExtractTextPlugin({
     filename: `./bundle.css`,
     allChunks: true
